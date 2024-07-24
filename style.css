@@ -17,7 +17,9 @@ nav{
     height: 50px;
     color: white;
     background-color: #FCA311;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
 }
 
@@ -98,4 +100,19 @@ nav{
 }
 .hide{
     display: none;
+}
+
+@media screen and (max-width: 720px){
+    .game{
+        grid-template-columns: repeat(3, 14vh);
+        grid-template-rows: repeat(3, 14vh);
+    }
+
+    .btn{
+        font-size: 9vh;
+    }
+    .winner{
+        font-size: 4vh;
+        margin-top: 20px;
+    }
 }

@@ -22,12 +22,14 @@ const winPatterns = [
 const resetGame = () =>{
     turnO = false;
     count = 0;
+    won = false;
     enableButtons();
 };
 
 const newGame = () =>{
     turnO = true;
     count = 0;
+    won = false;
     enableButtons();
 };
 
@@ -78,7 +80,7 @@ const showWinner = (winner)=>{
 };
 
 const draw = () =>{
-    console.log("Drwasjdlf");
+    console.log("Game Drawed!");
     msg.innerText = `Draw!`;
     winMassage.classList.remove("hide");
 };
